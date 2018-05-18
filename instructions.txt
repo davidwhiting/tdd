@@ -1,0 +1,9 @@
+# create a virtual environment
+python -m venv virtualenv
+source virtualenv/bin/activate
+## deactivate with 
+#deactivate
+
+pip install "django<1.12" "selenium<4"
+
+# install geckodriver from https://github.com/mozilla/geckodriver/releases
