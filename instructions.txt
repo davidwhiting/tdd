@@ -1,9 +1,21 @@
+#!/bin/bash
+
 # create a virtual environment
 python -m venv virtualenv
 source virtualenv/bin/activate
+
 ## deactivate with 
 #deactivate
 
 pip install "django<1.12" "selenium<4"
 
 # install geckodriver from https://github.com/mozilla/geckodriver/releases
+
+# Use Django to start a project
+django-admin.py startproject superlists .
+
+# Run Django's development server
+python manage.py runserver
+
+# Run functional test again
+python functional_tests.py
