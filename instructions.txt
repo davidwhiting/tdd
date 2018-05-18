@@ -19,3 +19,6 @@ python manage.py runserver
 
 # Run functional test again
 python functional_tests.py
+
+# Start an ap for the to-do list
+python manage.py startapp lists
