@@ -1,4 +1,4 @@
-from django.urls inport resolve
+from django.urls import resolve
 from django.test import TestCase
 from lists.views import home_page
 
