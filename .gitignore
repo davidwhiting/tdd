@@ -1,4 +1,6 @@
 virtualenv
+virtualenv.old
+gitignore
 db.sqlite3
 geckodriver.log
 __pycache__
