@@ -8,17 +8,19 @@ source virtualenv/bin/activate
 #deactivate
 
 pip install "django<1.12" "selenium<4"
+pip install --upgrade pip
 
 # install geckodriver from https://github.com/mozilla/geckodriver/releases
 
-# Use Django to start a project
+## Use Django to start a project
+## this creates the superlists directory and manage.py file
 django-admin.py startproject superlists .
 
-# Run Django's development server
-python manage.py runserver
+## Run Django's development server
+python manage.py runserver &
 
 # Run functional test again
 python functional_tests.py
 
-# Start an ap for the to-do list
+# Start an app for the to-do list
 python manage.py startapp lists
